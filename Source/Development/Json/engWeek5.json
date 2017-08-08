@@ -1,0 +1,587 @@
+{
+  "arr": [{
+      "name": "ally",
+      "value": "союзник"
+    },
+    {
+      "name": "enemy",
+      "value": "враг"
+    },
+    {
+      "name": "strategy",
+      "value": "стратегия"
+    },
+    {
+      "name": "soldier",
+      "value": "солдат"
+    },
+    {
+      "name": "troops",
+      "value": "войска (пехота)"
+    },
+    {
+      "name": "victory",
+      "value": "победа"
+    },
+    {
+      "name": "defeat",
+      "value": "поражение"
+    },
+    {
+      "name": "army",
+      "value": "армия"
+    },
+    {
+      "name": "hero",
+      "value": "герой"
+    },
+    {
+      "name": "commander",
+      "value": "командир"
+    },
+    {
+      "name": "flag",
+      "value": "флаг"
+    },
+    {
+      "name": "rank",
+      "value": "звание"
+    },
+    {
+      "name": "war",
+      "value": "война"
+    },
+    {
+      "name": "battle",
+      "value": "битва"
+    },
+    {
+      "name": "shot",
+      "value": "выстрел"
+    },
+    {
+      "name": "fight",
+      "value": "борьба (драка)"
+    },
+    {
+      "name": "bomb",
+      "value": "бомба"
+    },
+    {
+      "name": "bullet",
+      "value": "пуля"
+    },
+    {
+      "name": "shooting",
+      "value": "стрельба"
+    },
+    {
+      "name": "weapon",
+      "value": "оружие"
+    },
+    {
+      "name": "attack",
+      "value": "атака"
+    },
+    {
+      "name": "general",
+      "value": "генерал"
+    },
+    {
+      "name": "division",
+      "value": "дивизия (подразделение)"
+    },
+    {
+      "name": "unit",
+      "value": "войсковая единица"
+    },
+    {
+      "name": "relationships",
+      "value": "отношения"
+    },
+    {
+      "name": "love",
+      "value": "любовь"
+    },
+    {
+      "name": "date",
+      "value": "свидание"
+    },
+    {
+      "name": "proposal",
+      "value": "предложение"
+    },
+    {
+      "name": "affair",
+      "value": "любовная связь (роман)"
+    },
+    {
+      "name": "relation",
+      "value": "отношение"
+    },
+    {
+      "name": "understanding",
+      "value": "понимание"
+    },
+    {
+      "name": "reaction",
+      "value": "реакция"
+    },
+    {
+      "name": "influence",
+      "value": "влияние"
+    },
+    {
+      "name": "smile",
+      "value": "улыбка"
+    },
+    {
+      "name": "visit",
+      "value": "визит"
+    },
+    {
+      "name": "respect",
+      "value": "уважение"
+    },
+    {
+      "name": "commitment",
+      "value": "приверженность"
+    },
+    {
+      "name": "surprise",
+      "value": "сюрприз"
+    },
+    {
+      "name": "fun",
+      "value": "веселье"
+    },
+    {
+      "name": "guest",
+      "value": "гость"
+    },
+    {
+      "name": "neighbor",
+      "value": "сосед"
+    },
+    {
+      "name": "stranger",
+      "value": "незнакомец"
+    },
+    {
+      "name": "week",
+      "value": "неделя"
+    },
+    {
+      "name": "night",
+      "value": "ночь (вечер)"
+    },
+    {
+      "name": "month",
+      "value": "месяц"
+    },
+    {
+      "name": "hour",
+      "value": "час"
+    },
+    {
+      "name": "minute",
+      "value": "минута"
+    },
+    {
+      "name": "morning",
+      "value": "утро"
+    },
+    {
+      "name": "moment",
+      "value": "момент"
+    },
+    {
+      "name": "century",
+      "value": "век"
+    },
+    {
+      "name": "period",
+      "value": "период"
+    },
+    {
+      "name": "future",
+      "value": "будущее"
+    },
+    {
+      "name": "second",
+      "value": "секунда"
+    },
+    {
+      "name": "time",
+      "value": "время"
+    },
+    {
+      "name": "year",
+      "value": "год"
+    },
+    {
+      "name": "day",
+      "value": "день"
+    },
+    {
+      "name": "decade",
+      "value": "десять лет"
+    },
+    {
+      "name": "evening",
+      "value": "вечер"
+    },
+    {
+      "name": "past",
+      "value": "прошлое"
+    },
+    {
+      "name": "beginning",
+      "value": "начало"
+    },
+    {
+      "name": "date",
+      "value": "дата (время)"
+    },
+    {
+      "name": "start",
+      "value": "старт (начало)"
+    },
+    {
+      "name": "era",
+      "value": "эра"
+    },
+    {
+      "name": "present",
+      "value": "настоящее (время)"
+    },
+    {
+      "name": "afternoon",
+      "value": "день (время суток)"
+    },
+    {
+      "name": "city",
+      "value": "большой город"
+    },
+    {
+      "name": "town",
+      "value": "маленький город"
+    },
+    {
+      "name": "road",
+      "value": "дорога"
+    },
+    {
+      "name": "building",
+      "value": "здание"
+    },
+    {
+      "name": "street",
+      "value": "улица"
+    },
+    {
+      "name": "bar",
+      "value": "бар"
+    },
+    {
+      "name": "station",
+      "value": "станция"
+    },
+    {
+      "name": "trip",
+      "value": "поездка"
+    },
+    {
+      "name": "hotel",
+      "value": "отель"
+    },
+    {
+      "name": "yard",
+      "value": "двор"
+    },
+    {
+      "name": "neighborhood",
+      "value": "район (окрестность)"
+    },
+    {
+      "name": "park",
+      "value": "парк"
+    },
+    {
+      "name": "village",
+      "value": "деревня"
+    },
+    {
+      "name": "resident",
+      "value": "житель"
+    },
+    {
+      "name": "club",
+      "value": "клуб"
+    },
+    {
+      "name": "district",
+      "value": "район"
+    },
+    {
+      "name": "crowd",
+      "value": "толпа"
+    },
+    {
+      "name": "block",
+      "value": "блок (квартал)"
+    },
+    {
+      "name": "shop",
+      "value": "магазин"
+    },
+    {
+      "name": "construction",
+      "value": "строительство"
+    },
+    {
+      "name": "tour",
+      "value": "тур"
+    },
+    {
+      "name": "restaurant",
+      "value": "ресторан"
+    },
+    {
+      "name": "bridge",
+      "value": "мост"
+    },
+    {
+      "name": "traffic",
+      "value": "дорожное движение"
+    },
+    {
+      "name": "museum",
+      "value": "музей"
+    },
+    {
+      "name": "emergency",
+      "value": "экстренные службы (напр. скорая)"
+    },
+    {
+      "name": "airport",
+      "value": "аэропорт"
+    },
+    {
+      "name": "address",
+      "value": "адрес"
+    },
+    {
+      "name": "beach",
+      "value": "пляж"
+    },
+    {
+      "name": "opening",
+      "value": "открытие"
+    },
+    {
+      "name": "route",
+      "value": "маршрут"
+    },
+    {
+      "name": "cable",
+      "value": "кабель, трос"
+    },
+    {
+      "name": "post",
+      "value": "почта, пост"
+    },
+    {
+      "name": "settlement",
+      "value": "поселение"
+    },
+    {
+      "name": "parking",
+      "value": "парковка"
+    },
+    {
+      "name": "stop",
+      "value": "остановка"
+    },
+    {
+      "name": "tower",
+      "value": "башня"
+    },
+    {
+      "name": "mayor",
+      "value": "мэр"
+    },
+    {
+      "name": "highway",
+      "value": "шоссе"
+    },
+    {
+      "name": "bench",
+      "value": "скамья"
+    },
+    {
+      "name": "column",
+      "value": "колонна"
+    },
+    {
+      "name": "resort",
+      "value": "курорт"
+    },
+    {
+      "name": "government",
+      "value": "правительство"
+    },
+    {
+      "name": "right",
+      "value": "право"
+    },
+    {
+      "name": "power",
+      "value": "власть"
+    },
+    {
+      "name": "member",
+      "value": "член"
+    },
+    {
+      "name": "community",
+      "value": "сообщество"
+    },
+    {
+      "name": "president",
+      "value": "президент"
+    },
+    {
+      "name": "party",
+      "value": "партия"
+    },
+    {
+      "name": "leader",
+      "value": "лидер"
+    },
+    {
+      "name": "official",
+      "value": "официальное лицо"
+    },
+    {
+      "name": "administration",
+      "value": "администрация"
+    },
+    {
+      "name": "campaign",
+      "value": "кампания"
+    },
+    {
+      "name": "terrorism",
+      "value": "терроризм"
+    },
+    {
+      "name": "election",
+      "value": "выборы"
+    },
+    {
+      "name": "authority",
+      "value": "полномочия (власть)"
+    },
+    {
+      "name": "peace",
+      "value": "мир (во всем мире)"
+    },
+    {
+      "name": "politics",
+      "value": "политика"
+    },
+    {
+      "name": "candidate",
+      "value": "кандидат"
+    },
+    {
+      "name": "institution",
+      "value": "учреждение"
+    },
+    {
+      "name": "vote",
+      "value": "голос (на выборах)"
+    },
+    {
+      "name": "citizen",
+      "value": "гражданин"
+    },
+    {
+      "name": "reform",
+      "value": "реформа"
+    },
+    {
+      "name": "act",
+      "value": "акт"
+    },
+    {
+      "name": "freedom",
+      "value": "свобода"
+    },
+    {
+      "name": "department",
+      "value": "департамент"
+    },
+    {
+      "name": "crisis",
+      "value": "кризис"
+    },
+    {
+      "name": "committee",
+      "value": "комитет"
+    },
+    {
+      "name": "voter",
+      "value": "избиратель"
+    },
+    {
+      "name": "democracy",
+      "value": "демократия"
+    },
+    {
+      "name": "poll",
+      "value": "опрос"
+    },
+    {
+      "name": "minority",
+      "value": "меньшинство"
+    },
+    {
+      "name": "union",
+      "value": "союз"
+    },
+    {
+      "name": "regulation",
+      "value": "регулирование"
+    },
+    {
+      "name": "politician",
+      "value": "политик"
+    },
+    {
+      "name": "governor",
+      "value": "губернатор"
+    },
+    {
+      "name": "rating",
+      "value": "рейтинг"
+    },
+    {
+      "name": "regime",
+      "value": "режим (правления)"
+    },
+    {
+      "name": "opposition",
+      "value": "оппозиция"
+    },
+    {
+      "name": "minister",
+      "value": "министр"
+    },
+    {
+      "name": "intervention",
+      "value": "вмешательство"
+    }
+  ]
+}
