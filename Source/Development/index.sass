@@ -10,13 +10,15 @@ $xxxl: 5000px
 // @mixin respond_to($to)
 //   @media screen and (max-width: $to)
 //     @content
-
+html,body
+  height: 100%
 html
   font-size: 18px
 body
   padding: 0
   margin: 0
   font-size: 1rem
+  overflow-x: hidden
 *
   font-family: 'Ubuntu',sans-serif
   box-sizing: border-box
@@ -132,8 +134,11 @@ svg
   +respond($xs)
     position: relative
     width: 100%
-#textField
-.textField
+    bottom: 0
+#toggleInputField
+.toggleInputField
+  width: 60px
+  height: 60px
   background-color: #000
   color: #fff
   fill: #fff
@@ -147,20 +152,23 @@ svg
   &.hidden
     fill: rgb(100, 100, 100)
   .st1
-    fill:#3F92CB
+    fill: #3F92CB
   +respond($xs)
     display: inline-block
-    width: 50px
+    vertical-align: middle
+    &+&
+      margin-top: 0
 #reset
 .reset
-  @extend .textField
+  @extend .toggleInputField
   &:hover
     svg
       transition-duration: 1.5s
       transform: rotate(360deg)
 #lang
 .lang
-  @extend .textField
+  line-height: 40px
+  @extend .toggleInputField
 
 //**************************************************
 //                END SETTING
@@ -208,6 +216,8 @@ svg
   border: 2px solid rgb(115, 115, 115)
   font-size: 2rem
   color: rgb(56, 56, 56)
+  transition-duration: 0.1s
+  outline: none
   &.hidden
     visibility: hidden
   +respond($lg)
@@ -219,6 +229,9 @@ svg
     padding: 2px
     width: 100%
     font-size: 1.2rem
+.invalid
+  border: 2px solid rgb(201, 52, 31)
+  box-shadow: 0px 0px 5px 2px rgb(201, 52, 31)
 #defeat
 .defeat
   font-size: 1.8rem

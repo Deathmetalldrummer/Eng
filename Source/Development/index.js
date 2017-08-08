@@ -1,14 +1,17 @@
 var lang = 'en';
 var langReverse = 'ru';
-var inputWord = $('#inputWord');
+var inputField = $('#inputField');
 var outputWord = $('#outputWord');
 var innerText = outputWord.text();
 var further = $('#further');
+var answer = $('#answer');
 var furtherText = further.text();
+var defeat = $('#defeat');
 var emptyArray = [];
 var errorArray = [];
 var randomNumber;
-var textField = ($('textField').hasClass('hidden')) ? false : true;
+var toggleInputField = ($('toggleInputField').hasClass('hidden')) ? false : true;
+var db;
 
 getJaSON();
 
@@ -22,12 +25,18 @@ $('#lang').on('click', function() {
     langReverse = 'ru';
     $(this).text('ENG');
   }
+  emptyArray.pop();
+  inputField.val('');
+  answer.text('');
+  randoom(db);
 });
-$('#textField').on('click', function() {
+
+$('#toggleInputField').on('click', function() {
   $(this).toggleClass('hidden');
-  inputWord.toggleClass('hidden');
-  textField = !textField;
+  inputField.toggleClass('hidden');
+  toggleInputField = !toggleInputField;
 });
+
 $('#reset').on('click', function() {
   getJaSON();
 });
@@ -38,60 +47,78 @@ $('.week').on('click', function(e) {
     getJaSON();
   }
 });
-$('#hamburger').on('click', function () {
+$('#hamburger').on('click', function() {
   $(this).closest('#nav').toggleClass('collapse');
 });
-
+$('#defeat').on('click', function() {
+  if (db && (emptyArray.length !== db.length)) {
+    answer.text(db[randomNumber][langReverse]);
+    if (errorArray.indexOf(randomNumber) === -1) {
+      errorArray.push(randomNumber);
+    }
+  }
+});
 
 function getJaSON() {
   var url = './Json/engWeek' + ($('.week.active').attr('id').replace('week', '')) + '.json';
-  $.getJSON(url, function(data) {
+  $.getJSON(url, function(data, textStatus) {
     if (data && data.arr.length) {
+      db = data.arr;
       outputWord.text(innerText);
-      inputWord.val('');
+      inputField.val('');
+      inputField.removeClass('invalid');
       further.text(furtherText);
       emptyArray = [];
       errorArray = [];
       further.unbind('click').on('click', function() {
-        wordRandom(data.arr);
+        wordRandom();
+        $(defeat).removeAttr('disabled')
         $(this).text('Далее');
       });
+    } else {
+      outputWord.html('Вы не готовы!');
+      further.unbind('click');
+      db = null;
     }
   });
 }
 
 
-function wordRandom(db) {
+function wordRandom() {
   if (!emptyArray.length) {
     randomNumber = getRandom(0, db.length);
-    setWord(db);
-  } else if (emptyArray.length === db.length) {
+    setWord();
+  } else if ((emptyArray.length === db.length)) {
     outputWord.html('Слова закончились ;)');
+    further.unbind('click');
   } else {
-    if (textField) {
-      validate(db);
+    if (toggleInputField) {
+      validate();
     } else {
-      functionName(db);
+      randoom();
     }
   }
 }
 
-function functionName(db) {
+function randoom() {
   randomNumber = getRandom(0, db.length)
   var indx = emptyArray.indexOf(randomNumber);
   if (indx === -1) {
-    setWord(db);
+    setWord();
   } else {
-    functionName(db);
+    randoom();
   }
 }
 
 
-function validate(db) {
-  if (db[randomNumber][lang] === inputWord.val()) {
-    functionName(db)
+function validate() {
+  if (db[randomNumber][langReverse].toLowerCase().trim() === inputField.val().toLowerCase().trim()) {
+    inputField.removeClass('invalid');
+    inputField.val('');
+    randoom();
   } else {
-    console.log(false);
+    inputField.addClass('invalid');
+    errorArray.push(randomNumber);
   }
 }
 
@@ -99,8 +126,9 @@ function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-function setWord(db) {
+function setWord() {
   var description = db[randomNumber].desc || '';
   outputWord.html(db[randomNumber][lang] + '<span>' + description + '</span>');
   emptyArray.push(randomNumber);
+  answer.text('');
 }
