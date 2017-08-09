@@ -205,6 +205,15 @@ svg
     font-size: 2rem
   +respond($xs)
     font-size: 1.2rem
+#answer
+.answer
+  font-size: 2rem
+  +respond($lg)
+    font-size: 1.5rem
+  +respond($sm)
+    font-size: 1.2rem
+  +respond($xs)
+    font-size: 1rem
 #inputWord
 .inputWord
   display: block
@@ -251,6 +260,9 @@ svg
 #further
 .further
   @extend .defeat
+#errors
+.errors
+  text-align: left
 //**************************************************
 //                END CONTENT
 //**************************************************

@@ -7,6 +7,7 @@ var further = $('#further');
 var answer = $('#answer');
 var furtherText = further.text();
 var defeat = $('#defeat');
+var errors = $('#errors');
 var emptyArray = [];
 var errorArray = [];
 var randomNumber;
@@ -34,6 +35,7 @@ $('#lang').on('click', function() {
 $('#toggleInputField').on('click', function() {
   $(this).toggleClass('hidden');
   inputField.toggleClass('hidden');
+  if(inputField.hasClass('invalid')) inputField.removeClass('invalid');
   toggleInputField = !toggleInputField;
 });
 
@@ -51,8 +53,9 @@ $('#hamburger').on('click', function() {
   $(this).closest('#nav').toggleClass('collapse');
 });
 $('#defeat').on('click', function() {
-  if (db && (emptyArray.length !== db.length)) {
-    answer.text(db[randomNumber][langReverse]);
+  if (db) {
+    var description = (db[randomNumber].desc && db[randomNumber].desc[langReverse]) ? '<span> (' + db[randomNumber].desc[langReverse]  + ')</span>' : '';
+    answer.html(db[randomNumber][langReverse] + description);
     if (errorArray.indexOf(randomNumber) === -1) {
       errorArray.push(randomNumber);
     }
@@ -68,6 +71,8 @@ function getJaSON() {
       inputField.val('');
       inputField.removeClass('invalid');
       further.text(furtherText);
+      errors.html('');
+      answer.html('');
       emptyArray = [];
       errorArray = [];
       further.unbind('click').on('click', function() {
@@ -90,6 +95,13 @@ function wordRandom() {
     setWord();
   } else if ((emptyArray.length === db.length)) {
     outputWord.html('Слова закончились ;)');
+    // $('#defeat').unbind('click');
+    answer.text('');
+    errorArray.forEach(function (i,ix,ar) {
+      var descriptionLang = (db[i].desc && db[i].desc[lang]) ? '<span> (' + db[i].desc[lang]  + ')</span>' : '';
+      var descriptionLangReverse = (db[i].desc && db[i].desc[langReverse]) ? '<span> (' + db[i].desc[langReverse]  + ')</span>' : '';
+      errors.append('<li>'+db[i][lang]+descriptionLang+' - '+db[i][langReverse]+descriptionLangReverse+'</li>')
+    });
     further.unbind('click');
   } else {
     if (toggleInputField) {
@@ -118,7 +130,9 @@ function validate() {
     randoom();
   } else {
     inputField.addClass('invalid');
-    errorArray.push(randomNumber);
+    if (errorArray.indexOf(randomNumber) === -1) {
+      errorArray.push(randomNumber);
+    }
   }
 }
 
@@ -127,8 +141,8 @@ function getRandom(min, max) {
 }
 
 function setWord() {
-  var description = db[randomNumber].desc || '';
-  outputWord.html(db[randomNumber][lang] + '<span>' + description + '</span>');
+  var description = (db[randomNumber].desc && db[randomNumber].desc[lang]) ? '<span> (' + db[randomNumber].desc[lang]  + ')</span>' : '';
+  outputWord.html(db[randomNumber][lang] + description);
   emptyArray.push(randomNumber);
   answer.text('');
 }
