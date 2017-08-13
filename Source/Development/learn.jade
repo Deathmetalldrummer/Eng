@@ -8,8 +8,16 @@ html(lang="ru")
     link(rel="stylesheet", href="./index.css")
     title Eng
   body
-    a(href="learn.html") learn
-    br
-    a(href="test.html") test
+    nav#nav.nav.collapse
+      #hamburger.hamburger
+        span.burg
+        span.burg
+        span.burg
+      #weeks.weeks
+        a.week#thematic1(href="#").active Неделя 1
+        a.week#thematic2(href="#") Неделя 2
+        a.week#thematic3(href="#") Неделя 3
+        a.week#thematic4(href="#") Неделя 4
+    #content
     script(src="./Lib/jquery-3.2.1.min.js")
-    script(src="./index.js")
+    script(src="./learn.js")
