@@ -97,7 +97,7 @@ function test() {
     outputWord.html(db[randomNumber][lang] + description);
     emptyArray.push(randomNumber);
   }
-  $('#burgerHome').on('click', function() {
+  $('#burgerHome svg').on('click', function() {
     $('#wrap').load('index.html #wrapper', functionName);
   });
 
@@ -196,7 +196,7 @@ function learn() {
       getJaSON();
     }
   });
-  $('#burgerHome').on('click', function() {
+  $('#burgerHome svg').on('click', function() {
     $('#wrap').load('index.html #wrapper');
   });
 
@@ -242,7 +242,7 @@ function learn() {
       $('#content').append(div);
     });
   }
-  $('#burgerHome').on('click', function() {
+  $('#burgerHome svg').on('click', function() {
     $('#wrap').load('index.html #wrapper', functionName);
   });
 

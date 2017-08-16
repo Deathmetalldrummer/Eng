@@ -50,8 +50,9 @@ svg
     height: 0
 #hamburger
 .hamburger
-  font-size: 1rem
+  // font-size: 1rem
   display: inline-block
+  text-align: left
   z-index: 1100
   background-color: #303030
   padding: 10px
@@ -73,20 +74,28 @@ svg
   &+&
     margin-top: 6px
 .burger
+  font-size: 1rem
   display: inline-block
   vertical-align: middle
   cursor: pointer
+  width: 20%
   width: calc(100% - 40px)
 
 .burgerHome
+  font-size: 1rem
   display: inline-block
   vertical-align: middle
   text-align: right
   overflow: hidden
-  width: 30px
+  width: 80%
+  width: calc(100% - (100% - 40px))
   height: 30px
-  fill: #fff
-  cursor: pointer
+  svg
+    cursor: pointer
+    display: inline-block
+    fill: #fff
+    height: 30px
+    width: 30px
 #weeks
 .weeks
   font-size: 1rem
