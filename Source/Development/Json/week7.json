@@ -1,0 +1,340 @@
+{
+	"arr": [
+		{
+			"en": "and (You and me)",
+			"ru": " и (Ты и я)"
+		},
+		{
+			"en": "that (I know that you’ll like it)",
+			"ru": " что (Я знаю, что тебе это понравится)"
+		},
+		{
+			"en": "but (Proud but small)",
+			"ru": " но (Гордая, но маленькая)"
+		},
+		{
+			"en": "or (To be or not to be)",
+			"ru": " или (Быть или не быть)"
+		},
+		{
+			"en": "as (As you can see…)",
+			"ru": " как (Как вы можете видеть…)"
+		},
+		{
+			"en": "if (If you trust me)",
+			"ru": " если (Если ты доверяешь мне)"
+		},
+		{
+			"en": "when (Call me when you are ready)",
+			"ru": " когда (Позвони мне, когда будешь готов)"
+		},
+		{
+			"en": "than (It’s more than nothing)",
+			"ru": " чем (Это больше, чем ничего)"
+		},
+		{
+			"en": "because (Keep smiling, because life is a beautiful thing)",
+			"ru": " потому что (Продолжайте улыбаться, потому что жизнь - прекрасная штука)"
+		},
+		{
+			"en": "while (Life is what happens while you are busy making other plans)",
+			"ru": " в то время, как (Жизнь - это то, что происходит в то время, как вы заняты построением других планов)"
+		},
+		{
+			"en": "where (No matter where you are, I’ll find you)",
+			"ru": " где (Неважно где ты, я найду тебя)"
+		},
+		{
+			"en": "so (Just so you know)",
+			"ru": " чтобы (Просто, чтобы вы знали)"
+		},
+		{
+			"en": "So that (She wrote his phone number on her hand so that she wouldn’t forget it)",
+			"ru": " чтобы (Она записила его номер телефона у себя на руке, чтобы не забыть его)"
+		},
+		{
+			"en": "though (He failed the exam though he studied hard)",
+			"ru": " хотя (Он не сдал экзамен, хотя и учился как следует)"
+		},
+		{
+			"en": "after (They weren’t much happy after their divorce)",
+			"ru": " после (Они не были особо счастливы после развода)"
+		},
+		{
+			"en": "until (Your carriage is ok until the midnight)",
+			"ru": " до какого-то времени (С твоей каретой все будет в порядке до полуночи)"
+		},
+		{
+			"en": "Whether… or (You have to make your choice wheter you like it or not.)",
+			"ru": " используется перед конструкцией с двумя вариантами, типа «или…или» (Ты должен сделать выбор, нравится тебе это или нет)"
+		},
+		{
+			"en": "before (Don’t watch horror movies before you sleep)",
+			"ru": " До, перед (Не смотри ужасы перед сном)"
+		},
+		{
+			"en": "although (My cell phone doesn’t work although it’s new)",
+			"ru": " Хотя (Мой сотовый телефон не работает, хотя он новый)"
+		},
+		{
+			"en": "like (Sweet like a candy)",
+			"ru": " Как (Сладкая, как конфета)"
+		},
+		{
+			"en": "unless (She won't be able to keep her job, unless she can control her anger) ",
+			"ru": "Если … не (Она не сможет сохранить работу, если не научится сдерживать гнев)"
+		},
+		{
+			"en": "except (Everyone passed the exam exept me)",
+			"ru": " За исключением, кроме (Все сдали экзамен, кроме меня)"
+		},
+		{
+			"en": "around (around the world) ",
+			"ru": " вокруг (вокруг света)"
+		},
+		{
+			"en": "at (at the gate)",
+			"ru": "  у (у ворот)"
+		},
+		{
+			"en": "by (house by the lake)",
+			"ru": "  около, у (дом у реки)"
+		},
+		{
+			"en": "in (in the room)",
+			"ru": "  в (в комнате)"
+		},
+		{
+			"en": "above (above the table)",
+			"ru": "  над (над столом)"
+		},
+		{
+			"en": "among (the wolf among us)",
+			"ru": "  среди (волк среди нас)"
+		},
+		{
+			"en": "behind (behind the building)",
+			"ru": "  позади (позади здания)"
+		},
+		{
+			"en": "beside (beside the house)",
+			"ru": "  рядом с (рядом с домом)"
+		},
+		{
+			"en": "between (between two mountains)",
+			"ru": "  между (между двух гор)"
+		},
+		{
+			"en": "beyond (beyond the river)",
+			"ru": "  по ту сторону, за (за рекой)"
+		},
+		{
+			"en": "in front of (in front of TV)",
+			"ru": "  перед (перед телевизором)"
+		},
+		{
+			"en": "inside (inside the box)",
+			"ru": "  внутри (внутри коробки)"
+		},
+		{
+			"en": "on (The cat is on the roof)",
+			"ru": "  на (кошка на крыше)"
+		},
+		{
+			"en": "out (to walk out) ",
+			"ru": " вне, наружу (выйти наружу)"
+		},
+		{
+			"en": "outside (Is there anybody outside?)",
+			"ru": "  снаружи (Есть кто-нибудь снаружи?)"
+		},
+		{
+			"en": "under (underground is under ground)",
+			"ru": "  под (подземка под землей)"
+		},
+		{
+			"en": "within (within my heart)",
+			"ru": "  внутри, в (в моем сердце)"
+		},
+		{
+			"en": "below (below sea level)",
+			"ru": "  ниже (ниже уровня моря)"
+		},
+		{
+			"en": "around (around nine o'clock)",
+			"ru": "  около (около 9 часов)"
+		},
+		{
+			"en": "at (at the midday)",
+			"ru": "  в (в полдень)"
+		},
+		{
+			"en": "before (before breakfast)",
+			"ru": "  до (до завтрака)"
+		},
+		{
+			"en": "by (by two o'clock)",
+			"ru": "  к какому-то времени (к двум часам)"
+		},
+		{
+			"en": "in (I'll be back in ten minutes)",
+			"ru": "  через какое-то время (вернусь через 10 минут)"
+		},
+		{
+			"en": "for (I've been waiting for you for an hour)",
+			"ru": "  на протяжении (я ждал тебя на протяжении часа)"
+		},
+		{
+			"en": "since (I’ve been studying English since I was 10)",
+			"ru": "  с какого-то времени (я учу английский с 10 лет)"
+		},
+		{
+			"en": "during (during the war)",
+			"ru": "  во время (во время войны)"
+		},
+		{
+			"en": "within (He's got to be here within an hour)",
+			"ru": "  в течение (Он должен появиться здесь в течение часа)"
+		},
+		{
+			"en": "on (on Monday)",
+			"ru": "  в какой-то день недели (в понедельник)"
+		},
+		{
+			"en": "after (Don't call me after 9PM)",
+			"ru": "  после (не звони мне после 9 вечера)"
+		},
+		{
+			"en": "till (from dusk till dawn)",
+			"ru": "  до (от рассвета до заката)"
+		},
+		{
+			"en": "down (down the street)",
+			"ru": "  вниз (вниз по улице)"
+		},
+		{
+			"en": "up (up the street)",
+			"ru": "  вверх (вверх по улице)"
+		},
+		{
+			"en": "from (I am from Russia)",
+			"ru": "  из (я из России)"
+		},
+		{
+			"en": "across (go across the river)",
+			"ru": "  через (иди через реку)"
+		},
+		{
+			"en": "along (along the wall)",
+			"ru": "  вдоль (вдоль стены)"
+		},
+		{
+			"en": "into (into the cave)",
+			"ru": "  в, внутрь (в пещеру)"
+		},
+		{
+			"en": "to (to the next stop) ",
+			"ru": " к чему-то (к следующей остановке)"
+		},
+		{
+			"en": "toward (toward the city)",
+			"ru": "  по направлению к (по направлению к городу)"
+		},
+		{
+			"en": "through (through the forest)",
+			"ru": "  через (через лес)"
+		},
+		{
+			"en": "over (over the fence)",
+			"ru": "  через (через забор)"
+		},
+		{
+			"en": "off (off here)",
+			"ru": "  из, откуда-то (отсюда)"
+		},
+		{
+			"en": "out of (out of the coverage area)",
+			"ru": "  наружу, вне (вне зоны покрытия)"
+		},
+		{
+			"en": "via (go via Moscow)",
+			"ru": "  через (ехать через Москву)"
+		},
+		{
+			"en": "past (go past the church)",
+			"ru": "  мимо (пройти мимо церкви)"
+		},
+		{
+			"en": "with (coffe with sugar)",
+			"ru": "  с (кофе с сахаром)"
+		},
+		{
+			"en": "about (tell me about yourself)",
+			"ru": "  о (расскажите мне о себе)"
+		},
+		{
+			"en": "against (against war)",
+			"ru": "  против (против войны)"
+		},
+		{
+			"en": "without (without you)",
+			"ru": "  без (без тебя)"
+		},
+		{
+			"en": "including (two cars including one broken)",
+			"ru": "  включая (две машины, включая одну сломанную)"
+		},
+		{
+			"en": "according to (according to the rules)",
+			"ru": "  в соответствии с (в соответствии с правилами)"
+		},
+		{
+			"en": "because of (because of the car accident)",
+			"ru": "  из-за (из-за автомобильной аварии)"
+		},
+		{
+			"en": "despite (despite the bad weather)",
+			"ru": "  несмотря на (несмотря на плохую погоду)"
+		},
+		{
+			"en": "instead of (new part instead of broken one)",
+			"ru": "  вместо (новая запчасть вместо сломанной)"
+		},
+		{
+			"en": "in spite of (in spite of the rain)",
+			"ru": "  несмотря на (несмотря на дождь)"
+		},
+		{
+			"en": "regardless of (regardless of what you say)",
+			"ru": "  несмотря на, независимо от (несмотря на то, что ты скажешь)"
+		},
+		{
+			"en": "thanks to (thanks to the doctor, I'm feeling fine)",
+			"ru": "  благодаря (благодаря доктору, я чувствую себя отлично)"
+		},
+		{
+			"en": "by means of (by means of tools)",
+			"ru": "  с помощью (с помощью инструментов)"
+		},
+		{
+			"en": "on behalf of (on behalf of my boss)",
+			"ru": "  от имени (от имени моего босса)"
+		},
+		{
+			"en": "for (this gift is for you)",
+			"ru": "  для (этот подарок для тебя)"
+		},
+		{
+			"en": "compare to (This is nothing compare to the real troubles)",
+			"ru": "  в сравнении с (это ничто в сравнении с настоящими трудностями)"
+		},
+		{
+			"en": "rather… than (they'd rather buy fish than meat)",
+			"ru": "  скорее, чем (они купят скорее рыбу, чем мясо)"
+		},
+		{
+			"en": "rather than (they'd buy fish rather than meat)",
+			"ru": "  скорее, чем/а не (они купят рыбу, а не мясо)"
+		}
+	]
+}

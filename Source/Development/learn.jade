@@ -8,16 +8,26 @@ html(lang="ru")
     link(rel="stylesheet", href="./index.css")
     title Eng
   body
-    nav#nav.nav.collapse
-      #hamburger.hamburger
-        span.burg
-        span.burg
-        span.burg
-      #weeks.weeks
-        a.week#thematic1(href="#").active Неделя 1
-        a.week#thematic2(href="#") Неделя 2
-        a.week#thematic3(href="#") Неделя 3
-        a.week#thematic4(href="#") Неделя 4
-    #content
+    #wrap
+      #wrapper
+        nav#nav.nav.collapse
+          #hamburger.hamburger
+            .burger
+              span.burg
+              span.burg
+              span.burg
+            #burgerHome.burgerHome
+              svg(xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 119.8 100")
+                path(d="M95.8,30.7V7.6H83.3v13.2L59.9,2L2.4,48h15.8v50h83.3V48h15.8L95.8,30.7z M95.7,92.2h-21V53.6H45.1v38.6H24 V45.2l35.8-28.7l35.8,28.7L95.7,92.2L95.7,92.2z")
+          #weeks.weeks
+            a.week#thematic1(href="#").active Неделя 1
+            a.week#thematic2(href="#") Неделя 2
+            a.week#thematic3(href="#") Неделя 3
+            a.week#thematic4(href="#") Неделя 4
+            a.week#thematic5(href="#") Неделя 5
+            a.week#thematic6(href="#") Неделя 6
+            a.week#thematic7(href="#") Неделя 7
+        #content.content.contentLearn
     script(src="./Lib/jquery-3.2.1.min.js")
-    script(src="./learn.js")
+    script(src="./index.js")
+    script learn();
