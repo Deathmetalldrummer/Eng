@@ -11,19 +11,17 @@ html(lang="ru")
     #wrap
       #wrapper
         .com
-          a(href="#").link#learn Изучить ~3000 слов
-          a(href="#").link#test Проверить ~3000 слов
-        hr
-        .dev
-          h4 В разработке:
-          ol
-            li
-              a(href="#").link 8000
-            li
-              a(href="#").link 8000
-            li
-              a(href="#").link 16000
-            li
-              a(href="#").link 16000
+          h2 3000:
+          a(href="#learn" data-type='learn' data-learn='t3000').link Частотный ~3000 слов
+          a(href="#learn" data-type='learn' data-learn='theme').link Тематический ~3000 слов
+          a(href="#test" data-type='test' data-learn='false').link Тематический (проверка) ~3000 слов
+          hr
+        .com
+          h2 8000:
+          a(href="#learn8000" data-type='learn' data-learn='t8000').link Частотный ~8000 слов
+          hr
+        .com
+          h2 13000:
+          a(href="#learn13000" data-type='learn' data-learn='t13000').link Частотный ~13000 слов
     script(src="./Lib/jquery-3.2.1.min.js")
     script(src="./index.js")

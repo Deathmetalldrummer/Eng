@@ -1,0 +1,35 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet")
+    link(rel="stylesheet", href="./index.css")
+    title Eng
+  body
+    #wrap
+      #wrapper
+        nav#nav.nav.collapse
+          #hamburger.hamburger
+            .burger
+              span.burg
+              span.burg
+              span.burg
+            #burgerHome.burgerHome
+              svg(xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 119.8 100")
+                path(d="M95.8,30.7V7.6H83.3v13.2L59.9,2L2.4,48h15.8v50h83.3V48h15.8L95.8,30.7z M95.7,92.2h-21V53.6H45.1v38.6H24 V45.2l35.8-28.7l35.8,28.7L95.7,92.2L95.7,92.2z")
+          #weeks.weeks
+            a.week#thousand1(href="#" data-folder="thousand8000").active 1 тысяча
+            a.week#thousand2(href="#" data-folder="thousand8000") 2 тысяча
+            a.week#thousand3(href="#" data-folder="thousand8000") 3 тысяча
+            a.week#thousand4(href="#" data-folder="thousand8000") 4 тысяча
+            a.week#thousand5(href="#" data-folder="thousand8000") 5 тысяча
+            a.week#thousand6(href="#" data-folder="thousand8000") 6 тысяча
+            a.week#thousand7(href="#" data-folder="thousand8000") 7 тысяча
+            a.week#thousand8(href="#" data-folder="thousand8000") 8 тысяча
+            a.week#thousand8000(href="#" data-folder="thousand8000") 8000
+        #content.content.contentLearn
+    script(src="./Lib/jquery-3.2.1.min.js")
+    script(src="./index.js")
+    script learn();

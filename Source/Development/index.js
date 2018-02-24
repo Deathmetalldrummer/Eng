@@ -1,10 +1,20 @@
 functionName();
 function functionName() {
   $('.link').unbind('click').on('click', function(e) {
-    e.preventDefault();
-    var id = $(this).attr('id');
-    if (id === 'learn') {
+    // e.preventDefault();
+    var id = $(this).data('type');
+    var data_learn = $(this).data('learn');
+    if (id === 'learn' && data_learn === 'theme') {
       $('#wrap').load('learn.html #wrapper', learn);
+    }
+    if (id === 'learn' && data_learn === 't3000') {
+      $('#wrap').load('learn_3000.html #wrapper', learn);
+    }
+    if (id === 'learn' && data_learn === 't8000') {
+      $('#wrap').load('learn_8000.html #wrapper', learn);
+    }
+    if (id === 'learn' && data_learn === 't13000') {
+      $('#wrap').load('learn_13000.html #wrapper', learn);
     }
     if (id === 'test') {
       $('#wrap').load('test.html #wrapper', test);
@@ -205,7 +215,8 @@ function learn() {
   getJaSON()
 
   function getJaSON() {
-    var url = './Json/' + ($('.week.active').attr('id')) + '.json';
+    var folder = ($('.week.active').data('folder')) ? $('.week.active').data('folder') + '/' : '';
+    var url = './Json/' + folder + ($('.week.active').attr('id')) + '.json';
     $.getJSON(url, function(data, textStatus) {
       if (data && data.arr.length) {
         db = data.arr;
